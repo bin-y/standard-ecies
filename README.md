@@ -22,7 +22,7 @@ const ecies = require('standard-ecies');
 // when symmetric cipher is not in ecb mode, iv option must be offered. 
 
 // default options
-var option = {
+var options = {
     hashName: 'sha256',
     hashLength: 32,
     macName: 'sha256',

@@ -21,8 +21,8 @@ const ecies = require('standard-ecies');
 // option parameter is optional, all options are optional except iv,
 // when symmetric cipher is not in ecb mode, iv option must be offered. 
 
-// default option 
-var eciesOptions = {
+// default options
+var option = {
     hashName: 'sha256',
     hashLength: 32,
     macName: 'sha256',
@@ -37,8 +37,8 @@ var eciesOptions = {
 var ecdh = crypto.createECDH(options.curveName);
 ecdh.generateKeys();
 
-var plainText = 'hello world';
+var plainText = new Buffer('hello world');
 var encryptedText = ecies.encrypt(ecdh.getPublicKey(), plainText, options);
 var decryptedText = ecies.decrypt(ecdh.getPrivateKey(), encryptedText, options);
-assert(plainText == decryptedText.toString());
+assert(plainText.toString('hex') == decryptedText.toString('hex'));
 ```

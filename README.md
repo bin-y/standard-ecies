@@ -1,6 +1,7 @@
 # standard-ecies [![Build Status](https://travis-ci.org/bin-y/standard-ecies.svg?branch=master)](https://travis-ci.org/bin-y/standard-ecies)
 Standard ECIES implemention for NodeJS based on `crypto` module with no other dependencies.
 
+## Curves
 It should support all of curves listed in `crypto.getCurves()`
 
 ## Motivation

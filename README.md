@@ -1,6 +1,8 @@
 # standard-ecies [![Build Status](https://travis-ci.org/bin-y/standard-ecies.svg?branch=master)](https://travis-ci.org/bin-y/standard-ecies)
 Standard ECIES implemention for NodeJS based on `crypto` module with no other dependencies.
 
+It should support all of curves listed in `crypto.getCurves()`
+
 ## Motivation
 I have tried most of ECIES implemention published on npm, but none of them is exactly what I wanted.
 [sjcl](https://www.npmjs.com/package/sjcl) and [secp256k1](https://www.npmjs.com/package/secp256k1) 
@@ -39,6 +41,6 @@ ecdh.generateKeys();
 
 var plainText = new Buffer('hello world');
 var encryptedText = ecies.encrypt(ecdh.getPublicKey(), plainText, options);
-var decryptedText = ecies.decrypt(ecdh.getPrivateKey(), encryptedText, options);
+var decryptedText = ecies.decrypt(ecdh, encryptedText, options);
 assert(plainText.toString('hex') == decryptedText.toString('hex'));
 ```

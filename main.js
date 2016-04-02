@@ -134,11 +134,8 @@ exports.encrypt = function(publicKey, message, options) {
     return Buffer.concat([R, cipherText, tag]);
 };
 
-exports.decrypt = function(privateKey, message, options) {
+exports.decrypt = function(ecdh, message, options) {
     options = makeUpOptions(options);
-
-    var ecdh = crypto.createECDH(options.curveName);
-    ecdh.setPrivateKey(privateKey);
 
     var publicKeyLength = ecdh.getPublicKey(null, options.keyFormat).length;
     // R

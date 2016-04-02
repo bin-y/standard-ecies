@@ -26,7 +26,7 @@ describe('basic test', function() {
 
         var plainText = new Buffer('hello world');
         var encryptedText = ecies.encrypt(ecdh.getPublicKey(), plainText, options);
-        var decryptedText = ecies.decrypt(ecdh.getPrivateKey(), encryptedText, options);
+        var decryptedText = ecies.decrypt(ecdh, encryptedText, options);
         assert(plainText.toString('hex') == decryptedText.toString('hex'));
     });
 });

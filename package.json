@@ -1,0 +1,30 @@
+{
+  "name": "standard-ecies",
+  "version": "0.0.1",
+  "description": "Standard ECIES implemention for NodeJS based on crypto module with no other dependencies.",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bin-y/standard-ecies.git"
+  },
+  "keywords": [
+    "ECC",
+    "ECIES",
+    "encryption",
+    "cryptography"
+  ],
+  "author": "Bin.Y",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/bin-y/standard-ecies/issues"
+  },
+  "homepage": "https://github.com/bin-y/standard-ecies#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "standard-ecies",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Standard ECIES implemention for NodeJS based on crypto module with no other dependencies.",
   "main": "main.js",
   "scripts": {

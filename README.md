@@ -1,8 +1,5 @@
 # standard-ecies [![Build Status](https://travis-ci.org/bin-y/standard-ecies.svg?branch=master)](https://travis-ci.org/bin-y/standard-ecies)
-Standard ECIES implemention for NodeJS based on `crypto` module with no other dependencies.
-
-## Curves
-It should support all of curves listed in `crypto.getCurves()`
+Standard ECIES (ecc encryption) implemention for NodeJS based on `crypto` module with no other dependencies.
 
 ## Motivation
 I have tried most of ECIES implemention published on npm, but none of them is exactly what I wanted.
@@ -14,7 +11,9 @@ are not easy for windows users, either.
 implemention is customized for author's own purpose, not widely applicable.
 
 ## Implementation
-The implemention is followed by the description in https://en.wikipedia.org/wiki/Integrated_Encryption_Scheme
+The implemention is followed by the description in https://en.wikipedia.org/wiki/Integrated_Encryption_Scheme .
+
+Support all of curves listed in `crypto.getCurves()`.
 
 ## Usage
 ```javascript

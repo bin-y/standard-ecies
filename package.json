@@ -24,6 +24,6 @@
   "homepage": "https://github.com/bin-y/standard-ecies#readme",
   "dependencies": {},
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "5.*"
   }
 }

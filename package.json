@@ -22,8 +22,7 @@
     "url": "https://github.com/bin-y/standard-ecies/issues"
   },
   "homepage": "https://github.com/bin-y/standard-ecies#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "*"
   }
